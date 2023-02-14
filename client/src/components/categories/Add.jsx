@@ -12,7 +12,7 @@ const Add = ({ isAddModalOpen, setIsAddModalOpen, categories, setCategories }) =
 
     const onFinish = (values) => {
         try {
-            fetch(process.env.REACT_APP_SERVER_URL + "/api/categories/add-category", {
+            fetch(process.env.VITE_APP_SERVER_URL + "/api/categories/add-category", {
                 method: "POST",
                 body: JSON.stringify(values),
                 headers: {

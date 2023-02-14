@@ -43,7 +43,7 @@ app.use("/api/auth", authRoute)
 app.use("/api/users", userRoute)
 
 
-connect().then(app.listen(port, () => {
-    
+app.listen(port, () => {
+    connect()
     console.log(`Your app listening on port ${port}`);
-}))
+})
