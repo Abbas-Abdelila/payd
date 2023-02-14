@@ -13,7 +13,7 @@ const Login = () => {
   const onFinish = async (values) => {
     setLoading(true)
     try {
-        const res = await fetch(process.env.VITE_APP_SERVER_URL + "/api/auth/login", {
+        const res = await fetch("https://pear-brainy-hippo.cyclic.app/api/auth/login", {
         method: "POST",
         body: JSON.stringify(values),
         headers: { "Content-type": "application/json; charset=UTF-8" }
